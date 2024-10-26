@@ -2,6 +2,10 @@
 const json = {
     "recipes": {
         "protein_breakfast": {
+            "meta": {
+                title: "Protein breakfast",
+                src: "https://www.eatingwell.com/thmb/QhS7SWXfbfxbBxU6bntNhBy62VI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/old-fashioned-oatmeal-beauty-01-435-d6cbb0c6a9d0407d9750c6bde58efa8f.jpg",
+            },
             "oat": {
                 "quantity": 50,
                 "measure": "g",
@@ -20,6 +24,10 @@ const json = {
             }
         },
         "protein_meal": {
+            "meta": {
+                title: "Protein meal",
+                src: "https://www.eatingwell.com/thmb/QhS7SWXfbfxbBxU6bntNhBy62VI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/old-fashioned-oatmeal-beauty-01-435-d6cbb0c6a9d0407d9750c6bde58efa8f.jpg",
+            },
             "lentil": {
                 "quantity": 100,
                 "measure": "g",
@@ -30,6 +38,10 @@ const json = {
             },
         },
         "chicken_teriyaki_jow": {
+            "meta": {
+                title: "Chicken teriyaki jow",
+                src: "https://www.eatingwell.com/thmb/QhS7SWXfbfxbBxU6bntNhBy62VI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/old-fashioned-oatmeal-beauty-01-435-d6cbb0c6a9d0407d9750c6bde58efa8f.jpg",
+            },
             "cherry_tomato": {
                 "quantity": 120,
                 "measure": "g",
@@ -56,6 +68,10 @@ const json = {
             },
         },
         "oignon_beeg_cooking_with_morgane": {
+            "meta": {
+                title: "Oignon beeg cooking with morgane",
+                src: "https://www.eatingwell.com/thmb/QhS7SWXfbfxbBxU6bntNhBy62VI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/old-fashioned-oatmeal-beauty-01-435-d6cbb0c6a9d0407d9750c6bde58efa8f.jpg",
+            },
             "beef": {
                 "quantity": 150,
                 "measure": "g",
@@ -78,6 +94,10 @@ const json = {
             },
         },
         "burger": {
+            "meta": {
+                title: "Burger",
+                src: "https://www.eatingwell.com/thmb/QhS7SWXfbfxbBxU6bntNhBy62VI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/old-fashioned-oatmeal-beauty-01-435-d6cbb0c6a9d0407d9750c6bde58efa8f.jpg",
+            },
             "minced_meat_(haché)": {
                 "quantity": 150,
                 "measure": "g",
@@ -108,6 +128,10 @@ const json = {
             },
         },
         "tonkatsu_pork": {
+            "meta": {
+                title: "Tonkatsu pork",
+                src: "https://www.eatingwell.com/thmb/QhS7SWXfbfxbBxU6bntNhBy62VI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/old-fashioned-oatmeal-beauty-01-435-d6cbb0c6a9d0407d9750c6bde58efa8f.jpg",
+            },
             "pork": {
                 "quantity": 1,
                 "measure": null,
@@ -126,6 +150,10 @@ const json = {
             },
         },
         "noodle_ginger_(mine)": {
+            "meta": {
+                title: "Noodle ginger (mine)",
+                src: "https://www.eatingwell.com/thmb/QhS7SWXfbfxbBxU6bntNhBy62VI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/old-fashioned-oatmeal-beauty-01-435-d6cbb0c6a9d0407d9750c6bde58efa8f.jpg",
+            },
             "chicken": {
                 "quantity": 1,
                 "measure": null,
@@ -148,6 +176,10 @@ const json = {
             },
         },
         "pasta_arrabiata": {
+            "meta": {
+                title: "Pasta arrabiata",
+                src: "https://www.eatingwell.com/thmb/QhS7SWXfbfxbBxU6bntNhBy62VI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/old-fashioned-oatmeal-beauty-01-435-d6cbb0c6a9d0407d9750c6bde58efa8f.jpg",
+            },
             "pasta": {
                 "quantity": 80,
                 "measure": "g",
@@ -168,9 +200,43 @@ const json = {
     },
 };
 
+
+// ========== UTILS========= =================================================
+function displayResults (listElem) {
+    result.innerHTML = '';
+    result.appendChild(listElem);
+}
+
+// ========== LOCAL STORAGE =================================================
+const STORAGE_KEY = 'formData';
+function saveFormDataInLocalStorage (formData) {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(formData));
+}
+
+function eraseFormDataInLocalStorage () {
+    localStorage.removeItem(STORAGE_KEY);
+}
+
 // ========== CREATE FRONT =================================================
 
 const main = document.querySelector('#recipes');
+const main_content = main.querySelector('#main_content');
+const result = document.querySelector('#result');
+const reset = document.querySelector('#reset');
+
+function doesFormDataExistInLocalStorage () {
+    return localStorage.hasOwnProperty(STORAGE_KEY) && null !== localStorage.getItem(STORAGE_KEY);
+}
+
+if (doesFormDataExistInLocalStorage()) {
+    const formData = JSON.parse(localStorage.getItem(STORAGE_KEY));
+    displaySubmit(formData);
+}
+
+reset.onclick = function () {
+    eraseFormDataInLocalStorage();
+    result.innerHTML = '';
+}
 
 function getSelect() {
     const select = document.createElement('select');
@@ -188,19 +254,30 @@ function getSelect() {
 // TODO RETRIEVE INFO FROM JSON FILE AND NOT FROM CONSTANT
 for (const recipeName in json.recipes) {
     const newLabel = document.createElement('label');
-    newLabel.innerText = recipeName;
+    // newLabel.innerText = recipeName;
+    newLabel.classList.add('label_style');
     newLabel.for = recipeName;
     const select = getSelect();
     select.name = recipeName;
-    newLabel.appendChild(select);
-    main.appendChild(newLabel);
-    main.appendChild(document.createElement('hr'));
-}
 
-const submit = document.createElement('button');
-submit.type = 'submit';
-submit.innerText = 'Create';
-main.appendChild(submit);
+    // add img if exists and add title
+    const meta = json.recipes[recipeName].meta;
+    if (meta) {
+        const img = document.createElement('img');
+        img.src = meta.src;
+        img.alt = recipeName;
+        img.title = recipeName;
+        img.classList.add('image_style');
+        newLabel.appendChild(img);
+    }
+
+    // add select
+    newLabel.appendChild(select);
+
+    // append to main_content
+    main_content.appendChild(newLabel);
+    main_content.appendChild(document.createElement('hr'));
+}
 
 function getAllRecipeNames () {
     return Object.keys(json.recipes);
@@ -213,7 +290,11 @@ main.onsubmit = function (e) {
     for (const recipeName of getAllRecipeNames()) {
         formDataTest.recipes[recipeName] = parseInt(e.target[recipeName].value);
     }
+    saveFormDataInLocalStorage(formDataTest);
+    displaySubmit(formDataTest);
+}
 
+function displaySubmit (formDataTest) {
     // ========== CALCULATE ========================================================
     // test
     // const formDataTest = {
@@ -238,6 +319,9 @@ main.onsubmit = function (e) {
         const recipeInfo = json.recipes[recipeName];
 
         for (const ingredientName in recipeInfo) {
+            if ('meta' === ingredientName) {
+                continue;
+            }
             const ingredientInfo = recipeInfo[ingredientName];
 
             if (false === list.hasOwnProperty(ingredientName)) {
@@ -250,7 +334,6 @@ main.onsubmit = function (e) {
         }
     }
 
-
     // ========== SHOW PARSED LIST ========================================================
     const listElem = document.createElement('ul');
     for (const ingredientName in list) {
@@ -258,8 +341,9 @@ main.onsubmit = function (e) {
 
         // parse ingredient name
         let ingNameParsed = ingredientName.replace('_', ' '); // TODO uppercase first letter
-        itemElem.innerText = `${ingNameParsed} : ${list[ingredientName].quantity} ${list[ingredientName].measure ?? ''}`; 
+        itemElem.innerText = `${ingNameParsed} : ${list[ingredientName].quantity} ${list[ingredientName].measure ?? ''}`;
         listElem.appendChild(itemElem);
     }
-    document.querySelector('body').appendChild(listElem);
+
+    displayResults(listElem);
 }

@@ -1,14 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="index.js" async></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #main_content {
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .label_style {
+      flex: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .image_style {
+      width: 200px;
+      height: 200px;
+    }
+  </style>
+  <script src="index.js" async></script>
 </head>
 <body style="background: darkgrey; padding: 2rem;">
-    <h2>Grocery Maker</h3>
-    <form id="recipes" name="recipes"></form>
+<h2>Grocery Maker</h2>
+<form id="recipes" name="recipes">
+  <div id="main_content"></div>
+  <button type="submit">Create</button>
+</form>
+<button id="reset">Reset</button>
+<div id="result"></div>
 </body>
 </html>
