@@ -4,7 +4,7 @@ const json = {
         "protein_breakfast": {
             "meta": {
                 title: "Protein breakfast",
-                src: "https://www.eatingwell.com/thmb/QhS7SWXfbfxbBxU6bntNhBy62VI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/old-fashioned-oatmeal-beauty-01-435-d6cbb0c6a9d0407d9750c6bde58efa8f.jpg",
+                src: "imgs/protein_breakfast.webp",
             },
             "oat": {
                 "quantity": 50,
@@ -23,24 +23,42 @@ const json = {
                 "measure": "g",
             }
         },
-        "protein_meal": {
+        "butter_bread_breakfast": {
             "meta": {
-                title: "Protein meal",
-                src: "https://www.eatingwell.com/thmb/QhS7SWXfbfxbBxU6bntNhBy62VI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/old-fashioned-oatmeal-beauty-01-435-d6cbb0c6a9d0407d9750c6bde58efa8f.jpg",
+                title: "Butter bread breakfast",
+                src: "imgs/pain_beurre.webp",
             },
-            "lentil": {
-                "quantity": 100,
-                "measure": "g",
-            },
-            "egg": {
+            "soft_bread_(mie)": {
                 "quantity": 2,
                 "measure": null,
             },
+            "butter": {
+                "quantity": 15,
+                "measure": "g",
+            },
         },
-        "chicken_teriyaki_jow": {
+        "skyr_granola_breakfast": {
             "meta": {
-                title: "Chicken teriyaki jow",
-                src: "https://www.eatingwell.com/thmb/QhS7SWXfbfxbBxU6bntNhBy62VI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/old-fashioned-oatmeal-beauty-01-435-d6cbb0c6a9d0407d9750c6bde58efa8f.jpg",
+                title: "Skyr granola breakfast",
+                src: "imgs/skyr_granola_breakfast.webp",
+            },
+            "skyr": {
+                "quantity": 1,
+                "measure": null,
+            },
+            "granola_homemade_or_cereal": {
+                "quantity": 20,
+                "measure": "g",
+            },
+            "blueberry": {
+                "quantity": 20,
+                "measure": "g",
+            }
+        },
+            "chicken_teriyaki_jow": {
+            "meta": {
+                title: "Chicken teriyaki summer bowl from jow",
+                src: "imgs/chicken_teriyaki_bowl_jow.jpg",
             },
             "cherry_tomato": {
                 "quantity": 120,
@@ -67,10 +85,10 @@ const json = {
                 "measure": "g",
             },
         },
-        "oignon_beeg_cooking_with_morgane": {
+        "oignon_beef_cooking_with_morgane": {
             "meta": {
-                title: "Oignon beeg cooking with morgane",
-                src: "https://www.eatingwell.com/thmb/QhS7SWXfbfxbBxU6bntNhBy62VI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/old-fashioned-oatmeal-beauty-01-435-d6cbb0c6a9d0407d9750c6bde58efa8f.jpg",
+                title: "Oignon beef cooking with morgane",
+                src: "imgs/oinion_beef_morgane.jpg",
             },
             "beef": {
                 "quantity": 150,
@@ -93,12 +111,12 @@ const json = {
                 "measure": "g",
             },
         },
-        "burger": {
+        "burger_maison": {
             "meta": {
-                title: "Burger",
-                src: "https://www.eatingwell.com/thmb/QhS7SWXfbfxbBxU6bntNhBy62VI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/old-fashioned-oatmeal-beauty-01-435-d6cbb0c6a9d0407d9750c6bde58efa8f.jpg",
+                title: "Burger Maison by moi meme",
+                src: "imgs/burger_maison.jpg",
             },
-            "minced_meat_(haché)": {
+            "minced_meat": { // haché
                 "quantity": 150,
                 "measure": "g",
             },
@@ -126,11 +144,19 @@ const json = {
                 "quantity": 0.10,
                 "measure": null,
             },
+            "mayonnaise": {
+                "quantity": 10,
+                "measure": "g",
+            },
+            "barbecue_sauce": {
+                "quantity": 10,
+                "measure": "g",
+            }
         },
         "tonkatsu_pork": {
             "meta": {
                 title: "Tonkatsu pork",
-                src: "https://www.eatingwell.com/thmb/QhS7SWXfbfxbBxU6bntNhBy62VI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/old-fashioned-oatmeal-beauty-01-435-d6cbb0c6a9d0407d9750c6bde58efa8f.jpg",
+                src: "imgs/tonkkatsu_pork.jpg",
             },
             "pork": {
                 "quantity": 1,
@@ -148,39 +174,21 @@ const json = {
                 "quantity": 40,
                 "measure": "g",
             },
-        },
-        "noodle_ginger_(mine)": {
-            "meta": {
-                title: "Noodle ginger (mine)",
-                src: "https://www.eatingwell.com/thmb/QhS7SWXfbfxbBxU6bntNhBy62VI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/old-fashioned-oatmeal-beauty-01-435-d6cbb0c6a9d0407d9750c6bde58efa8f.jpg",
-            },
-            "chicken": {
-                "quantity": 1,
-                "measure": null,
-            },
-            "egg_noodle_or_egg_pasta": {
-                "quantity": 80,
+            "rice": {
+                "quantity": 60,
                 "measure": "g",
             },
-            "ginger": {
-                "quantity": 5,
-                "measure": "g",
-            },
-            "onion": {
+            "broccoli": {
                 "quantity": 0.3,
                 "measure": null,
-            },
-            "pepper": {
-                "quantity": 0.3,
-                "measure": null,
-            },
+            }
         },
         "pasta_arrabiata": {
             "meta": {
                 title: "Pasta arrabiata",
-                src: "https://www.eatingwell.com/thmb/QhS7SWXfbfxbBxU6bntNhBy62VI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/old-fashioned-oatmeal-beauty-01-435-d6cbb0c6a9d0407d9750c6bde58efa8f.jpg",
+                src: "imgs/pasta_arrabiata.webp",
             },
-            "pasta": {
+            "pasta_mafaldine": {
                 "quantity": 80,
                 "measure": "g",
             },
@@ -197,9 +205,352 @@ const json = {
                 "measure": "small can",
             },
         },
+        "sushi": {
+            "meta": {
+                title: "Sushi maison",
+                src: "imgs/sushi_avocado.jpg",
+            },
+            "sushi_rice": {
+                "quantity": 70,
+                "measure": "g",
+            },
+            "avocado": {
+                "quantity": 0.5,
+                "measure": null,
+            },
+            "nori_sheet": {
+                "quantity": 1.5,
+                "measure": null,
+            },
+            "frozen_salmon": {
+                "quantity": 0.5,
+                "measure": null,
+            },
+            "soja": {
+                "quantity": 5,
+                "measure": "ml",
+            },
+            "fried_onion": {
+                "quantity": 5,
+                "measure": "g",
+            }
+        },
+        "hot_dog": {
+            "meta": {
+                title: "Hot dog",
+                src: "imgs/hot_dog.webp",
+            },
+            "hot_dog_bread": {
+                "quantity": 2,
+                "measure": null,
+            },
+            "sausage": {
+                "quantity": 2,
+                "measure": null,
+            },
+            "ketchup": {
+                "quantity": 10,
+                "measure": "g",
+            },
+            "mustard": {
+                "quantity": 10,
+                "measure": "g",
+            },
+            "salad": {
+                "quantity": 10,
+                "measure": "g",
+            }
+        },
+        "lomo_saltado": {
+            "meta": {
+                title: "Lomo saltado",
+                src: "imgs/lomo_saltado.jpg",
+            },
+            "beef": {
+                "quantity": 70,
+                "measure": "g",
+            },
+            "onion": {
+                "quantity": 0.25,
+                "measure": null,
+            },
+            "pepper": {
+                "quantity": 0.25,
+                "measure": null,
+            },
+            "tomato": {
+                "quantity": 0.5,
+                "measure": null,
+            },
+            "soja": {
+                "quantity": 15,
+                "measure": "ml",
+            },
+            "oyster_sauce": {
+                "quantity": 10,
+                "measure": "g",
+            },
+            "white_vinegar": {
+                "quantity": 5,
+                "measure": "ml",
+            },
+            "rice": {
+                "quantity": 75,
+                "measure": "g",
+            },
+            "french_fries": {
+                "quantity": 150,
+                "measure": "g",
+            }
+        },
+        // https://jow.fr/en/recipes/chicken-ramen-soup-81ya71eklqb400wj0kih
+        "chicken_ramen_jow": {
+            "meta": {
+                title: "Chicken ramen soup from jow",
+                src: "imgs/chicken_ramen_soup_jow.jpg",
+            },
+            "noodles": {
+                "quantity": 80,
+                "measure": "g"
+            },
+            "garlic": {
+                "quantity": 0.5,
+                "measure": null,
+            },
+            "chicken_breast": {
+                "quantity": 1,
+                "measure": null,
+            },
+            "baby_bella_mushrooms": {
+                "quantity": 50,
+                "measure": "g",
+            },
+            "miso_paste": {
+                "quantity": 0.5,
+                "measure": "tbsp"
+            },
+            "chicken_cube_bouillon": {
+                "quantity": 0.5,
+                "measure": null
+            },
+            "ginger": {
+                "quantity": 1,
+                "measure": null
+            },
+            "cilantro": {
+                "quantity": 0.2,
+                "measure": null,
+                "optional": true
+            }
+        },
+        "picard_meal": {
+            "meta": {
+                title: "Picard meal",
+                src: "imgs/any_picard.webp",
+            },
+            "picard_meal": {
+                "quantity": 1,
+                "measure": null,
+            },
+        },
+        "rice_gyoza_nem_picard": {
+            "meta": {
+                title: "Rice gyoza nem picard",
+                src: "imgs/rice_nem_gyoza_picard.jpeg",
+            },
+            "rice": {
+                "quantity": 70,
+                "measure": null,
+            },
+            "nem_picard": {
+                "quantity": 0.5,
+                "measure": null,
+            },
+            "gyoza_picard": {
+                "quantity": 0.5,
+                "measure": null,
+            },
+            "broccoli": {
+                "quantity": 0.3,
+                "measure": null,
+            }
+        },
+        "bananas": {
+            "meta": {
+                title: "Bananas",
+                src: "imgs/banana.jpg",
+            },
+            "banana": {
+                "quantity": 1,
+                "measure": null,
+            }
+        },
+        "batata_harra_and_meat": {
+            "meta": {
+                title: "Libanese potatoes (batata harra) and meat",
+                src: "imgs/libanese_potatoes.webp",
+            },
+            "potatoes": {
+                "quantity": 3,
+                "measure": null,
+            },
+            "beef": {
+                "quantity": 0.5,
+                "measure": null,
+            },
+            "cilantro": {
+                "quantity": 0.3,
+                "measure": null,
+            },
+            "libanese_red_spice": {
+                "quantity": 1,
+                "measure": "tbsp",
+            }
+        },
+        "eggplant_strifry": {
+            "meta": {
+                title: "Eggplant strifry",
+                src: "imgs/eggplant_stirfry.png",
+            },
+            "eggplant": {
+                "quantity": 0.5,
+                "measure": null,
+            },
+            "brown_sugar": {
+                "quantity": 1,
+                "measure": "tbsp",
+            },
+            "soy_sauce": {
+                "quantity": 15,
+                "measure": "ml",
+            },
+            "rice_vinegar": {
+                "quantity": 7,
+                "measure": "ml",
+            },
+            "toasted_sesame_oil": {
+                "quantity": 1.25,
+                "measure": "ml",
+            },
+            "cornstarch_(maizena)": {
+                "quantity": 0.25,
+                "measure": "tbsp",
+            },
+            "olive_oil": {
+                "quantity": 3,
+                "measure": "tbsp",
+            },
+            "garlic": {
+                "quantity": 2,
+                "measure": null,
+            },
+            "ginger": {
+                "quantity": 2,
+                "measure": "tbsp",
+            },
+            "green_onion_(cebette)_optional": {
+                "quantity": 1,
+                "measure": null,
+            },
+            "toasted_sesame_seeds": {
+                "quantity": 1,
+                "measure": "tbsp",
+            }
+        },
+        "pizza_pesto_picard": {
+            "meta": {
+                title: "Pizza pesto picard",
+                src: "imgs/pizza_pesto_picard.webp",
+            },
+            "pizza_pesto_picard": {
+                "quantity": 1,
+                "measure": null,
+            }
+        },
+        "smoked_salmon_salad": {
+            "meta": {
+                title: "Smoked salmon salad",
+                src: "imgs/smoked_salmon_salad.png",
+            },
+            "smoked_salmon": {
+                "quantity": 2,
+                "measure": null,
+            },
+            "avocado": {
+                "quantity": 0.5,
+                "measure": null,
+            },
+            "salad": {
+                "quantity": 10,
+                "measure": "g",
+            },
+            "cucumber": {
+                "quantity": 0.2,
+                "measure": null,
+            },
+            "balsamic_vinegar": {
+                "quantity": 10,
+                "measure": "g",
+            },
+            "olive_oil": {
+                "quantity": 10,
+                "measure": "g",
+            }
+        },
+        "meat_and_fries": {
+            "meta": {
+                title: "Meat and fries",
+                src: "imgs/meat_and_fries.png",
+            },
+            "red_meat": {
+                "quantity": 0.5,
+                "measure": null,
+            },
+            "fries": {
+                "quantity": 150,
+                "measure": "g",
+            },
+            "onion": {
+                "quantity": 0.3,
+                "measure": null,
+            },
+            "butter": {
+                "quantity": 30,
+                "measure": "g",
+            }
+        },
+        "empanadas": {
+            "meta": {
+                title: "Empanadas",
+                src: "imgs/empanadas.webp",
+            },
+            "pate_feuilletee_herta_bleue": {
+                "quantity": 0.5,
+                "measure": null,
+            },
+            "minced_beef": {
+                "quantity": 0.5,
+                "measure": null,
+            },
+            "onion": {
+                "quantity": 0.3,
+                "measure": null,
+            },
+            "egg": {
+                "quantity": 1,
+                "measure": null,
+            },
+            "pepper": {
+                "quantity": 0.3,
+                "measure": null,
+            },
+            "salad": {
+                "quantity": 30,
+                "measure": "g",
+            }
+        }
     },
 };
-
 
 // ========== UTILS========= =================================================
 function displayResults (listElem) {
@@ -238,7 +589,7 @@ reset.onclick = function () {
     result.innerHTML = '';
 }
 
-function getSelect() {
+function getQuantitySelectElem() {
     const select = document.createElement('select');
 
     for (let i = 0; i < 15; i++) {
@@ -257,7 +608,7 @@ for (const recipeName in json.recipes) {
     // newLabel.innerText = recipeName;
     newLabel.classList.add('label_style');
     newLabel.for = recipeName;
-    const select = getSelect();
+    const select = getQuantitySelectElem();
     select.name = recipeName;
 
     // add img if exists and add title
@@ -272,11 +623,28 @@ for (const recipeName in json.recipes) {
     }
 
     // add select
-    newLabel.appendChild(select);
+    const selectContainer = document.createElement('div');
+    selectContainer.classList.add('select_container');
+    const minusButton = document.createElement('button');
+    minusButton.innerText = '-';
+    minusButton.onclick = function () {
+        if (0 < select.value) {
+            select.value--;
+        }
+    }
+    selectContainer.appendChild(minusButton);
+    selectContainer.appendChild(select);
+    const plusButton = document.createElement('button');
+    plusButton.innerText = '+';
+    plusButton.onclick = function () {
+        select.value++;
+    }
+    selectContainer.appendChild(plusButton);
+    newLabel.appendChild(selectContainer);
 
     // append to main_content
     main_content.appendChild(newLabel);
-    main_content.appendChild(document.createElement('hr'));
+    // main_content.appendChild(document.createElement('hr'));
 }
 
 function getAllRecipeNames () {

@@ -6,6 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
+    body {
+      background-color: darkslategray;
+      padding: 2rem;
+      color: white;
+    }
     #main_content {
       width: 100%;
       display: flex;
@@ -14,19 +19,28 @@
       flex-wrap: wrap;
     }
     .label_style {
+      padding-bottom: 1rem;
       flex: auto;
       display: flex;
       flex-direction: column;
       align-items: center;
     }
     .image_style {
+      background: white;
+      box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+      border-radius: 20px;
       width: 200px;
       height: 200px;
+    }
+    .select_container {
+      margin-top: 0.5rem;
+      display: flex;
+      gap: 0.5rem;
     }
   </style>
   <script src="index.js" async></script>
 </head>
-<body style="background: darkgrey; padding: 2rem;">
+<body>
 <h2>Grocery Maker</h2>
 <form id="recipes" name="recipes">
   <div id="main_content"></div>
