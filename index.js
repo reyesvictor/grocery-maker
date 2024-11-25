@@ -548,6 +548,62 @@ const json = {
                 "quantity": 30,
                 "measure": "g",
             }
+        },
+        "eggplant_curry_otto_lenghi": {
+            "meta": {
+                title: "Eggplant curry otto lenghi",
+                src: "imgs/eggplant_curry_otto_lenghi.png",
+            },
+            "eggplant": {
+                "quantity": 0.5,
+                "measure": null,
+            },
+            "greek_yogurt": {
+                "quantity": 50,
+                "measure": "g",
+            },
+            "onion": {
+                "quantity": 0.25,
+                "measure": null,
+            },
+            "garlic": {
+                "quantity": 1,
+                "measure": null,
+            },
+            "cilantro": {
+                "quantity": 0.3,
+                "measure": null,
+            },
+        },
+        "cod_with_lemon_butter_jow": {
+            "meta": {
+                title: "Cod with lemon butter, rice & green beans",
+                src: "imgs/cod_with_lemon_butter.png",
+            },
+            "cod": {
+                "quantity": 0.5,
+                "measure": null,
+            },
+            "butter": {
+                "quantity": 15,
+                "measure": "g",
+            },
+            "lemon": {
+                "quantity": 0.25,
+                "measure": null,
+            },
+            "rice": {
+                "quantity": 75,
+                "measure": "g",
+            },
+            "green_beans_(can_be_frozen)": {
+                "quantity": 150,
+                "measure": "g",
+            },
+            "parsley": {
+                "quantity": 0.2,
+                "measure": null,
+            }
         }
     },
 };
