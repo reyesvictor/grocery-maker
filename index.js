@@ -467,12 +467,12 @@ const json = {
                 "measure": null,
             }
         },
-        "smoked_salmon_salad": {
+        "smoked_trout_salad": {
             "meta": {
                 title: "Smoked salmon salad",
                 src: "imgs/smoked_salmon_salad.png",
             },
-            "smoked_salmon": {
+            "smoked_trout_(truite)": {
                 "quantity": 2,
                 "measure": null,
             },
@@ -602,6 +602,16 @@ const json = {
             },
             "parsley": {
                 "quantity": 0.2,
+                "measure": null,
+            }
+        },
+        "picard_breakfast": {
+            "meta": {
+                title: "Picard breakfast",
+                src: "imgs/picard_breakfast.jpg",
+            },
+            "picard_breakfast_(croissant_or_pain_chocolat)": {
+                "quantity": 1,
                 "measure": null,
             }
         }
