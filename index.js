@@ -614,6 +614,40 @@ const json = {
                 "quantity": 1,
                 "measure": null,
             }
+        },
+        "miso_veggie_noodle_bowl_jow": {
+            "meta": {
+                title: "Miso veggie noodle bowl from jow",
+                src: "imgs/miso_veggie_noodle_bowl_jow.png",
+            },
+            "noodles": {
+                "quantity": 100,
+                "measure": "g",
+            },
+            "pak_choi": {
+                "quantity": 150,
+                "measure": "g",
+            },
+            "shiitake_mushrooms": {
+                "quantity": 150,
+                "measure": "g",
+            },
+            "miso_paste": {
+                "quantity": 1,
+                "measure": "tbsp",
+            },
+            "soy_sauce": {
+                "quantity": 1,
+                "measure": "tbsp",
+            },
+            "soja": {
+                "quantity": 0.5,
+                "measure": "garlic",
+            },
+            "chili_oil": {
+                "quantity": 0.5,
+                "measure": "tbsp",
+            }
         }
     },
 };
