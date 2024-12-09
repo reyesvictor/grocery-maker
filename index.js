@@ -378,7 +378,7 @@ const json = {
         "bananes": {
             "meta": {
                 title: "bananes",
-                src: "imgs/banane.jpg",
+                src: "imgs/banana.jpg",
             },
             "banane": {
                 "quantity": 1,
@@ -578,7 +578,7 @@ const json = {
         "cod_with_lemon_beurre_jow": {
             "meta": {
                 title: "Cod with lemon beurre, rice & green beans",
-                src: "imgs/cod_with_lemon_beurre.png",
+                src: "imgs/cod_with_lemon_butter.png",
             },
             "cabillaud": {
                 "quantity": 0.5,
@@ -642,6 +642,68 @@ const json = {
             },
             "huile_chili": {
                 "quantity": 0.5,
+                "measure": "tbsp",
+            }
+        },
+        "canette": {
+            "meta": {
+                title: "Canette",
+                src: "imgs/canette.png",
+            },
+            "canette": {
+                "quantity": 1,
+                "measure": null,
+            }
+        },
+        "cabillaug_courgette_curry_jow": {
+            "meta": {
+                title: "Cabillaud & courgettes au curry (jow)",
+                src: "imgs/cabillaug_courgette_curry_jow.png",
+            },
+            "cabillaud": {
+                "quantity": 1,
+                "measure": null,
+            },
+            "courgette": {
+                "quantity": 200,
+                "measure": "g",
+            },
+            "curry": {
+                "quantity": 1,
+                "measure": "tbsp",
+            },
+            "ail": {
+                "quantity": 0.5,
+                "measure": null,
+            },
+            "huile_olive": {
+                "quantity": 1,
+                "measure": "tbsp",
+            }
+        },
+        "paves_de_rumsteck_frites de carottes_(jow)": {
+            "meta": {
+                title: "Pavés de rumsteck, frites de carottes (jow)",
+                src: "imgs/paves_de_rumsteck_frites_de_carottes_jow.png",
+            },
+            "boeuf": {
+                "quantity": 1,
+                "measure": null,
+            },
+            "carotte": {
+                "quantity": 180,
+                "measure": "g",
+            },
+            "craime_fraiche": {
+                "quantity": 1,
+                "measure": "tbsp",
+            },
+            "paprika_(optionnel)": {
+                "quantity": 0.3,
+                "measure": "tbsp",
+            },
+            "sauce_barbecue": {
+                "quantity": 1,
                 "measure": "tbsp",
             }
         }
