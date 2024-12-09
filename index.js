@@ -6,33 +6,33 @@ const json = {
                 title: "Protein breakfast",
                 src: "imgs/protein_breakfast.webp",
             },
-            "oat": {
+            "flocon_avoine": {
                 "quantity": 50,
                 "measure": "g",
             },
-            "yogurt": {
+            "yaourt": {
                 "quantity": 100,
                 "measure": "g",
             },
-            "banana": {
+            "banane": {
                 "quantity": 1,
                 "measure": null,
             },
-            "dark_chocolate": {
+            "chocolat_noir": {
                 "quantity": 25,
                 "measure": "g",
             }
         },
-        "butter_bread_breakfast": {
+        "beurre_bread_breakfast": {
             "meta": {
-                title: "Butter bread breakfast",
+                title: "beurre bread breakfast",
                 src: "imgs/pain_beurre.webp",
             },
-            "soft_bread_(mie)": {
+            "pain_de_mie": {
                 "quantity": 2,
                 "measure": null,
             },
-            "butter": {
+            "beurre": {
                 "quantity": 15,
                 "measure": "g",
             },
@@ -46,11 +46,11 @@ const json = {
                 "quantity": 1,
                 "measure": null,
             },
-            "granola_homemade_or_cereal": {
+            "granola_maison": {
                 "quantity": 20,
                 "measure": "g",
             },
-            "blueberry": {
+            "myrtille": {
                 "quantity": 20,
                 "measure": "g",
             }
@@ -60,23 +60,23 @@ const json = {
                 title: "Chicken teriyaki summer bowl from jow",
                 src: "imgs/chicken_teriyaki_bowl_jow.jpg",
             },
-            "cherry_tomato": {
+            "tomate_cerise": {
                 "quantity": 120,
                 "measure": "g",
             },
-            "chicken": {
+            "poulet": {
                 "quantity": 1,
                 "measure": "slice",
             },
-            "soja": {
+            "sauce_soja": {
                 "quantity": 15,
                 "measure": "ml",
             },
-            "rice": {
+            "riz": {
                 "quantity": 1,
                 "measure": "person",
             },
-            "sesame_seed": {
+            "graines_de_sesame": {
                 "quantity": 5,
                 "measure": "g",
             },
@@ -90,23 +90,23 @@ const json = {
                 title: "Oignon beef cooking with morgane",
                 src: "imgs/oinion_beef_morgane.jpg",
             },
-            "beef": {
+            "boeuf": {
                 "quantity": 150,
                 "measure": "g",
             },
-            "flour": {
+            "farine": {
                 "quantity": 10,
                 "measure": "g",
             },
-            "oyster_sauce": {
+            "sauce_oyster": {
                 "quantity": 7,
                 "measure": "g",
             },
-            "soja": {
+            "sauce_soja": {
                 "quantity": 7,
-                "measure": "g",
+                "measure": "ml",
             },
-            "onion": {
+            "oignon": {
                 "quantity": 125,
                 "measure": "g",
             },
@@ -116,31 +116,31 @@ const json = {
                 title: "Burger Maison by moi meme",
                 src: "imgs/burger_maison.jpg",
             },
-            "minced_meat": { // haché
+            "viande_hachee": {
                 "quantity": 150,
                 "measure": "g",
             },
-            "fries": {
+            "frites": {
                 "quantity": 150,
                 "measure": "g",
             },
-            "burger_bread": {
-                "quantity": 2,
+            "pain_burger": {
+                "quantity": 1,
                 "measure": null,
             },
-            "salad": {
+            "salade": {
                 "quantity": 10,
                 "measure": "g",
             },
-            "tomato": {
+            "tomate": {
                 "quantity": 0.25,
                 "measure": null,
             },
-            "pickle": {
+            "cornichon": {
                 "quantity": 3,
                 "measure": "g",
             },
-            "onion": {
+            "oignon": {
                 "quantity": 0.10,
                 "measure": null,
             },
@@ -148,7 +148,7 @@ const json = {
                 "quantity": 10,
                 "measure": "g",
             },
-            "barbecue_sauce": {
+            "sauce_barbecue": {
                 "quantity": 10,
                 "measure": "g",
             }
@@ -158,15 +158,15 @@ const json = {
                 title: "Tonkatsu pork",
                 src: "imgs/tonkkatsu_pork.jpg",
             },
-            "pork": {
+            "porc": {
                 "quantity": 1,
                 "measure": null,
             },
-            "flour": {
+            "farine": {
                 "quantity": 30,
                 "measure": "g",
             },
-            "egg": {
+            "oeuf": {
                 "quantity": 1,
                 "measure": null,
             },
@@ -174,7 +174,7 @@ const json = {
                 "quantity": 40,
                 "measure": "g",
             },
-            "rice": {
+            "riz": {
                 "quantity": 60,
                 "measure": "g",
             },
@@ -188,19 +188,19 @@ const json = {
                 title: "Pasta arrabiata",
                 src: "imgs/pasta_arrabiata.webp",
             },
-            "pasta_mafaldine": {
+            "pates_mafaldine": {
                 "quantity": 80,
                 "measure": "g",
             },
-            "garlic": {
+            "ail": {
                 "quantity": 1,
                 "measure": null,
             },
-            "tomato": {
+            "tomate": {
                 "quantity": 0.5,
                 "measure": null,
             },
-            "tomato_concentrate": {
+            "sauce_tomate_concentree": {
                 "quantity": 0.5,
                 "measure": "small can",
             },
@@ -210,11 +210,11 @@ const json = {
                 title: "Sushi maison",
                 src: "imgs/sushi_avocado.jpg",
             },
-            "sushi_rice": {
+            "riz_sushi": {
                 "quantity": 70,
                 "measure": "g",
             },
-            "avocado": {
+            "avocat": {
                 "quantity": 0.5,
                 "measure": null,
             },
@@ -226,11 +226,11 @@ const json = {
                 "quantity": 0.5,
                 "measure": null,
             },
-            "soja": {
+            "sauce_soja": {
                 "quantity": 5,
                 "measure": "ml",
             },
-            "fried_onion": {
+            "oignon_frits": {
                 "quantity": 5,
                 "measure": "g",
             }
@@ -256,7 +256,7 @@ const json = {
                 "quantity": 10,
                 "measure": "g",
             },
-            "salad": {
+            "salade": {
                 "quantity": 10,
                 "measure": "g",
             }
@@ -266,39 +266,39 @@ const json = {
                 title: "Lomo saltado",
                 src: "imgs/lomo_saltado.jpg",
             },
-            "beef": {
+            "boeuf": {
                 "quantity": 70,
                 "measure": "g",
             },
-            "onion": {
+            "oignon": {
                 "quantity": 0.25,
                 "measure": null,
             },
-            "pepper": {
+            "poivre": {
                 "quantity": 0.25,
                 "measure": null,
             },
-            "tomato": {
+            "tomate": {
                 "quantity": 0.5,
                 "measure": null,
             },
-            "soja": {
+            "sauce_soja": {
                 "quantity": 15,
                 "measure": "ml",
             },
-            "oyster_sauce": {
+            "sauce_oyster": {
                 "quantity": 10,
                 "measure": "g",
             },
-            "white_vinegar": {
+            "vinaigre_blanc": {
                 "quantity": 5,
                 "measure": "ml",
             },
-            "rice": {
+            "riz": {
                 "quantity": 75,
                 "measure": "g",
             },
-            "french_fries": {
+            "frites": {
                 "quantity": 150,
                 "measure": "g",
             }
@@ -309,35 +309,35 @@ const json = {
                 title: "Chicken ramen soup from jow",
                 src: "imgs/chicken_ramen_soup_jow.jpg",
             },
-            "noodles": {
+            "nouilles": {
                 "quantity": 80,
                 "measure": "g"
             },
-            "garlic": {
+            "ail": {
                 "quantity": 0.5,
                 "measure": null,
             },
-            "chicken_breast": {
+            "poulet": {
                 "quantity": 1,
                 "measure": null,
             },
-            "baby_bella_mushrooms": {
+            "champignon": {
                 "quantity": 50,
                 "measure": "g",
             },
-            "miso_paste": {
+            "pate_miso": {
                 "quantity": 0.5,
                 "measure": "tbsp"
             },
-            "chicken_cube_bouillon": {
+            "bouillon_cube_poulet": {
                 "quantity": 0.5,
                 "measure": null
             },
-            "ginger": {
+            "gingembre": {
                 "quantity": 1,
                 "measure": null
             },
-            "cilantro": {
+            "coriandre": {
                 "quantity": 0.2,
                 "measure": null,
                 "optional": true
@@ -358,7 +358,7 @@ const json = {
                 title: "Rice gyoza nem picard",
                 src: "imgs/rice_nem_gyoza_picard.jpeg",
             },
-            "rice": {
+            "riz": {
                 "quantity": 70,
                 "measure": null,
             },
@@ -375,12 +375,12 @@ const json = {
                 "measure": null,
             }
         },
-        "bananas": {
+        "bananes": {
             "meta": {
-                title: "Bananas",
-                src: "imgs/banana.jpg",
+                title: "bananes",
+                src: "imgs/banane.jpg",
             },
-            "banana": {
+            "banane": {
                 "quantity": 1,
                 "measure": null,
             }
@@ -394,15 +394,15 @@ const json = {
                 "quantity": 3,
                 "measure": null,
             },
-            "beef": {
+            "boeuf": {
                 "quantity": 0.5,
                 "measure": null,
             },
-            "cilantro": {
+            "coriandre": {
                 "quantity": 0.3,
                 "measure": null,
             },
-            "libanese_red_spice": {
+            "epice_liban_piquante": {
                 "quantity": 1,
                 "measure": "tbsp",
             }
@@ -412,47 +412,47 @@ const json = {
                 title: "Eggplant strifry",
                 src: "imgs/eggplant_stirfry.png",
             },
-            "eggplant": {
+            "aubergine": {
                 "quantity": 0.5,
                 "measure": null,
             },
-            "brown_sugar": {
+            "sucre_brun": {
                 "quantity": 1,
                 "measure": "tbsp",
             },
-            "soy_sauce": {
+            "sauce_soja": {
                 "quantity": 15,
                 "measure": "ml",
             },
-            "rice_vinegar": {
+            "vinaigre_de_riz": {
                 "quantity": 7,
                 "measure": "ml",
             },
-            "toasted_sesame_oil": {
+            "graine_de_sesame": {
                 "quantity": 1.25,
                 "measure": "ml",
             },
-            "cornstarch_(maizena)": {
+            "maizena": {
                 "quantity": 0.25,
                 "measure": "tbsp",
             },
-            "olive_oil": {
+            "huile_olive": {
                 "quantity": 3,
                 "measure": "tbsp",
             },
-            "garlic": {
+            "ail": {
                 "quantity": 2,
                 "measure": null,
             },
-            "ginger": {
+            "gingembre": {
                 "quantity": 2,
                 "measure": "tbsp",
             },
-            "green_onion_(cebette)_optional": {
+            "cebette_(oignon_vert_chinois)": {
                 "quantity": 1,
                 "measure": null,
             },
-            "toasted_sesame_seeds": {
+            "graines_de_sesame": {
                 "quantity": 1,
                 "measure": "tbsp",
             }
@@ -472,27 +472,27 @@ const json = {
                 title: "Smoked salmon salad",
                 src: "imgs/smoked_salmon_salad.png",
             },
-            "smoked_trout_(truite)": {
+            "truite": {
                 "quantity": 2,
                 "measure": null,
             },
-            "avocado": {
+            "avocat": {
                 "quantity": 0.5,
                 "measure": null,
             },
-            "salad": {
+            "salade": {
                 "quantity": 10,
                 "measure": "g",
             },
-            "cucumber": {
+            "concombre": {
                 "quantity": 0.2,
                 "measure": null,
             },
-            "balsamic_vinegar": {
+            "vinaigre_balsamique": {
                 "quantity": 10,
                 "measure": "g",
             },
-            "olive_oil": {
+            "huile_olive": {
                 "quantity": 10,
                 "measure": "g",
             }
@@ -502,19 +502,19 @@ const json = {
                 title: "Meat and fries",
                 src: "imgs/meat_and_fries.png",
             },
-            "red_meat": {
+            "boeuf": {
                 "quantity": 0.5,
                 "measure": null,
             },
-            "fries": {
+            "frites": {
                 "quantity": 150,
                 "measure": "g",
             },
-            "onion": {
+            "oignon": {
                 "quantity": 0.3,
                 "measure": null,
             },
-            "butter": {
+            "beurre": {
                 "quantity": 30,
                 "measure": "g",
             }
@@ -528,23 +528,23 @@ const json = {
                 "quantity": 0.5,
                 "measure": null,
             },
-            "minced_beef": {
+            "viande_hachee": {
                 "quantity": 0.5,
                 "measure": null,
             },
-            "onion": {
+            "oignon": {
                 "quantity": 0.3,
                 "measure": null,
             },
-            "egg": {
+            "oeuf": {
                 "quantity": 1,
                 "measure": null,
             },
-            "pepper": {
+            "poivre": {
                 "quantity": 0.3,
                 "measure": null,
             },
-            "salad": {
+            "salade": {
                 "quantity": 30,
                 "measure": "g",
             }
@@ -554,53 +554,53 @@ const json = {
                 title: "Eggplant curry otto lenghi",
                 src: "imgs/eggplant_curry_otto_lenghi.png",
             },
-            "eggplant": {
+            "aubergine": {
                 "quantity": 0.5,
                 "measure": null,
             },
-            "greek_yogurt": {
+            "yaourt_grec": {
                 "quantity": 50,
                 "measure": "g",
             },
-            "onion": {
+            "oignon": {
                 "quantity": 0.25,
                 "measure": null,
             },
-            "garlic": {
+            "ail": {
                 "quantity": 1,
                 "measure": null,
             },
-            "cilantro": {
+            "coriandre": {
                 "quantity": 0.3,
                 "measure": null,
             },
         },
-        "cod_with_lemon_butter_jow": {
+        "cod_with_lemon_beurre_jow": {
             "meta": {
-                title: "Cod with lemon butter, rice & green beans",
-                src: "imgs/cod_with_lemon_butter.png",
+                title: "Cod with lemon beurre, rice & green beans",
+                src: "imgs/cod_with_lemon_beurre.png",
             },
-            "cod": {
+            "cabillaud": {
                 "quantity": 0.5,
                 "measure": null,
             },
-            "butter": {
+            "beurre": {
                 "quantity": 15,
                 "measure": "g",
             },
-            "lemon": {
+            "citron_entier": {
                 "quantity": 0.25,
                 "measure": null,
             },
-            "rice": {
+            "riz": {
                 "quantity": 75,
                 "measure": "g",
             },
-            "green_beans_(can_be_frozen)": {
-                "quantity": 150,
+            "haricots_verts": {
+                "quantity": 110,
                 "measure": "g",
             },
-            "parsley": {
+            "persil": {
                 "quantity": 0.2,
                 "measure": null,
             }
@@ -610,7 +610,7 @@ const json = {
                 title: "Picard breakfast",
                 src: "imgs/picard_breakfast.jpg",
             },
-            "picard_breakfast_(croissant_or_pain_chocolat)": {
+            "picard_breakfast_(croissant_-or_pain_chocolat)": {
                 "quantity": 1,
                 "measure": null,
             }
@@ -620,7 +620,7 @@ const json = {
                 title: "Miso veggie noodle bowl from jow",
                 src: "imgs/miso_veggie_noodle_bowl_jow.png",
             },
-            "noodles": {
+            "nouilles": {
                 "quantity": 100,
                 "measure": "g",
             },
@@ -628,23 +628,19 @@ const json = {
                 "quantity": 150,
                 "measure": "g",
             },
-            "shiitake_mushrooms": {
+            "champignon_(shiitake)": {
                 "quantity": 150,
                 "measure": "g",
             },
-            "miso_paste": {
+            "pate_miso": {
                 "quantity": 1,
                 "measure": "tbsp",
             },
-            "soy_sauce": {
-                "quantity": 1,
-                "measure": "tbsp",
-            },
-            "soja": {
+            "sauce_soja": {
                 "quantity": 0.5,
-                "measure": "garlic",
+                "measure": "ml",
             },
-            "chili_oil": {
+            "huile_chili": {
                 "quantity": 0.5,
                 "measure": "tbsp",
             }
