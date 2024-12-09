@@ -706,6 +706,94 @@ const json = {
                 "quantity": 1,
                 "measure": "tbsp",
             }
+        },
+        "croque_monsieur": {
+            "meta": {
+                title: "Croque monsieur",
+                src: "imgs/croque_monsieur.jpg",
+            },
+            "salade": {
+                "quantity": 10,
+                "measure": "g",
+            },
+            "pain_de_mie": {
+                "quantity": 2,
+                "measure": null,
+            },
+            "jambon": {
+                "quantity": 2,
+                "measure": null,
+            },
+            "gruyere": {
+                "quantity": 5,
+                "measure": "g",
+            },
+        },
+        "japan_curry": {
+            "meta": {
+                title: "Japan curry",
+                src: "imgs/japanese_curry.webp",
+            },
+            "huile_olive": {
+                "quantity": 1,
+                "measure": "tbsp",
+            },
+            "poulet": {
+                "quantity": 120,
+                "measure": "g",
+            },
+            "gingembre": {
+                "quantity": 5,
+                "measure": "g",
+            },
+            "ail": {
+                "quantity": 3,
+                "measure": "g",
+            },
+            "bicarbonate_soude": {
+                "quantity": 0.02,
+                "measure": "tsp",
+            },
+            "oignon": {
+                "quantity": 0.3,
+                "measure": null,
+            },
+            "curry_japonais": {
+                "quantity": 0.5,
+                "measure": "tbsp",
+            },
+            "bouillon_legumes_cube": {
+                "quantity": 0.25,
+                "measure": null,
+            },
+            "banane": {
+                "quantity": 0.2,
+                "measure": null,
+            },
+            "pommes_de_terre": {
+                "quantity": 65,
+                "measure": "g",
+            },
+            "carotte": {
+                "quantity": 60,
+                "measure": "g",
+            },
+            "laurier_(optionnel)": {
+                "quantity": 1,
+                "measure": null,
+            },
+            "anis_etoile_(optionnel)": {
+                "quantity": 1,
+                "measure": null,
+            },
+            "sauce_soja": {
+                "quantity": 2,
+                "measure": "tbsp",
+            },
+            "chocolat_en_poudre": {
+                "quantity": 0.3,
+                "measure": "tbsp",
+            }
         }
     },
 };
@@ -775,7 +863,7 @@ for (const recipeName in json.recipes) {
         const img = document.createElement('img');
         img.src = meta.src;
         img.alt = recipeName;
-        img.title = recipeName;
+        img.title = meta.title;
         img.classList.add('image_style');
         newLabel.appendChild(img);
     }
@@ -866,7 +954,7 @@ function displaySubmit (formDataTest) {
         const itemElem = document.createElement('li');
 
         // parse ingredient name
-        let ingNameParsed = ingredientName.replace('_', ' '); // TODO uppercase first letter
+        let ingNameParsed = ingredientName.replaceAll('_', ' ');
         itemElem.innerText = `${ingNameParsed} : ${list[ingredientName].quantity} ${list[ingredientName].measure ?? ''}`;
         listElem.appendChild(itemElem);
     }
