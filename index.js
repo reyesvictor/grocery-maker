@@ -694,7 +694,7 @@ const json = {
                 "quantity": 180,
                 "measure": "g",
             },
-            "craime_fraiche": {
+            "creme_fraiche": {
                 "quantity": 1,
                 "measure": "tbsp",
             },
@@ -756,6 +756,10 @@ const json = {
             },
             "oignon": {
                 "quantity": 0.3,
+                "measure": null,
+            },
+            "champignon": {
+                "quantity": 2,
                 "measure": null,
             },
             "curry_japonais": {
